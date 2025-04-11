@@ -4,39 +4,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal portfolio website showcasing my projects and skills">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        p {
-            color: #666;
-            text-align: center;
-            font-size: 1.2em;
-        }
-    </style>
+    <title>My Awesome Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Animation Stylesheet -->
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Portfolio!</h1>
-        <p>I'm currently building something amazing. Stay tuned!</p>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
     </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo rainbow-text">Ashish Reddy Tummuri</div>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link glow">Home</a></li>
+                    <li><a href="#about" class="nav-link glow">About</a></li>
+                    <li><a href="#skills" class="nav-link glow">Skills</a></li>
+                    <li><a href="#projects" class="nav-link glow">Projects</a></li>
+                    <li><a href="#contact" class="nav-link glow">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title neon-text">Welcome to My Portfolio Lads!</h1>
+            <div class="hero-subtitle typing-animation" data-text="FRESHMAN AT NYU (CLASS OF 2028)"></div>
+            <p class="text-glow"><!-- YOUR SHORT BIO/TAGLINE HERE --></p>
+            <a href="#contact" class="hero-cta pulse">Get In Touch</a>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <div class="scroll-down-icon bounce">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image tilt-effect">
+                    <img src="https://via.placeholder.com/500" alt="Ashish Reddy Tummuri">
+                </div>
+                <div class="about-text">
+                    <p>COMING SOON!</p> <!-- YOUR DETAILED BIO HERE -->
+                    <p>coming soon!</p> <!-- YOUR EDUCATION/EXPERIENCE HERE -->
+                    <p>comING SOON!</p><!-- YOUR INTERESTS/HOBBIES HERE -->
+                    <div class="about-buttons">
+                        <a href="#" class="btn btn-primary pulse">Download CV</a>
+                        <a href="#contact" class="btn btn-secondary glow">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills reveal">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <!-- SKILL CARD 1 -->
+                <div class="skill-card float">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="skill-title">STILL IN PROG</h3> <!--SKILL NAME HERE-->
+                    <p class="skill-description">STILL IN PROG</p> <!-- SKILL DESCRIPTION HERE-->
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <!-- SKILL CARD 2 -->
+                <div class="skill-card float" style="animation-delay: 0.2s;">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="skill-title">IT'S HARD</h3><!-- SKILL NAME HERE -->
+                    <p class="skill-description">PROG</p><!-- SKILL DESCRIPTION HERE -->
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-progress="85"></div>
+                    </div>
+                </div>
+                
+                <!-- SKILL CARD 3 -->
+                <div class="skill-card float" style="animation-delay: 0.4s;">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="skill-title">SHOULD GET A JOB</h3><!-- SKILL NAME HERE -->
+                    <p class="skill-description">YEA</p><!-- SKILL DESCRIPTION HERE -->
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-progress="80"></div>
+                    </div>
+                </div>
+                
+                <!-- SKILL CARD 4 -->
+                <div class="skill-card float" style="animation-delay: 0.6s;">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3 class="skill-title">yea</h3><!-- SKILL NAME HERE -->
+                    <p class="skill-description">ITS OVER</p><!-- SKILL DESCRIPTION HERE -->
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects reveal">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- PROJECT CARD 1 -->
+                <div class="project-card web tilt-effect">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"><!-- PROJECT TITLE HERE --></h3>
+                        <p class="project-description"><!-- PROJECT DESCRIPTION HERE --></p>
+                        <div class="project-tags">
+                            <span class="project-tag"><!-- TAG 1 --></span>
+                            <span class="project-tag"><!-- TAG 2 --></span>
+                            <span class="project-tag"><!-- TAG 3 --></span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT CARD 2 -->
+                <div class="project-card mobile tilt-effect">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"><!-- PROJECT TITLE HERE --></h3>
+                        <p class="project-description"><!-- PROJECT DESCRIPTION HERE --></p>
+                        <div class="project-tags">
+                            <span class="project-tag"><!-- TAG 1 --></span>
+                            <span class="project-tag"><!-- TAG 2 --></span>
+                            <span class="project-tag"><!-- TAG 3 --></span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PROJECT CARD 3 -->
+                <div class="project-card design tilt-effect">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 3" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title"><!-- PROJECT TITLE HERE --></h3>
+                        <p class="project-description"><!-- PROJECT DESCRIPTION HERE --></p>
+                        <div class="project-tags">
+                            <span class="project-tag"><!-- TAG 1 --></span>
+                            <span class="project-tag"><!-- TAG 2 --></span>
+                            <span class="project-tag"><!-- TAG 3 --></span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> View</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="<!-- YOUR NAME PLACEHOLDER -->">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="<!-- YOUR EMAIL PLACEHOLDER -->">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-input form-textarea" placeholder="<!-- YOUR MESSAGE PLACEHOLDER -->"></textarea>
+                </div>
+                <div class="form-error"></div>
+                <div class="form-success"></div>
+                <button type="submit" class="form-button pulse">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Ashish Reddy Tummuri</div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-text">&copy; FRESHMAN Ashish Reddy Tummuri. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
