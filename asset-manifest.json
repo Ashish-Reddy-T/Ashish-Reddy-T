@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ashish-Reddy-T/static/css/main.9b219650.css",
+    "main.js": "/Ashish-Reddy-T/static/js/main.66d31d7b.js",
+    "index.html": "/Ashish-Reddy-T/index.html",
+    "main.9b219650.css.map": "/Ashish-Reddy-T/static/css/main.9b219650.css.map",
+    "main.66d31d7b.js.map": "/Ashish-Reddy-T/static/js/main.66d31d7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b219650.css",
+    "static/js/main.66d31d7b.js"
+  ]
+}
