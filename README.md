@@ -1,7 +1,5 @@
 ## Hi there 👋
 
-Please visit my website __[HERE](https://ashish-reddy-t.github.io/Ashish-Reddy-T/)__ 💖
-
 <!--
 **Ashish-Reddy-T/Ashish-Reddy-T** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -15,4 +13,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+-->  
