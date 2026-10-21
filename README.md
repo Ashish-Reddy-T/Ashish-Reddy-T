@@ -2,7 +2,7 @@
 
 Static site deployed with `npm run deploy` from the repo root (publishes this folder to `gh-pages`).
 
-**Upstream:** Cloned from [jonbarron/jonbarron.github.io](https://github.com/jonbarron/jonbarron.github.io) (see [`UPSTREAM.txt`](UPSTREAM.txt) for the commit). We keep Jon’s [`stylesheet.css`](stylesheet.css) and the same HTML table / `<tr>` layout as his `index.html`; content is yours.
+**Upstream:** Cloned from [jonbarron/jonbarron.github.io](https://github.com/jonbarron/jonbarron.github.io) (see [`UPSTREAM.txt`](UPSTREAM.txt) for commit).
 
 ## Edit content
 
