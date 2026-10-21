@@ -1,21 +1,27 @@
 # Site source
 
-Static files deployed to GitHub Pages (`npm run deploy` from repo root).
+Static site deployed with `npm run deploy` from the repo root (publishes this folder to `gh-pages`).
+
+**Upstream:** Cloned from [jonbarron/jonbarron.github.io](https://github.com/jonbarron/jonbarron.github.io) (see [`UPSTREAM.txt`](UPSTREAM.txt) for the commit). We keep Jon’s [`stylesheet.css`](stylesheet.css) and the same HTML table / `<tr>` layout as his `index.html`; content is yours.
 
 ## Edit content
 
 - **Bio, links, sections:** [`index.html`](index.html)
-- **Styles:** [`stylesheet.css`](stylesheet.css) (from [Jon Barron’s template](https://github.com/jonbarron/jonbarron.github.io))
 - **Headshot:** replace [`images/AshishReddyT.jpg`](images/AshishReddyT.jpg)
-- **CV:** add `data/ashish_cv.pdf`, then in `index.html` replace the gray “CV (coming soon)” text with  
+- **CV:** add `data/ashish_cv.pdf`, then replace the gray “CV (coming soon)” in `index.html` with  
   `<a href="data/ashish_cv.pdf">CV</a>`
 
 ## Add a project
 
-1. Add a thumbnail under `images/`.
-2. In `index.html`, copy an entire `<tr>...</tr>` block under **Projects** (see the `TEMPLATE` comment).
+1. Add a thumbnail under `images/` (160×160 works well; Jon uses `width="160" height="160"` on `<img>`).
+2. In `index.html`, copy a full `<tr>...</tr>` under **Projects** (see the `TEMPLATE` comment). The row shape matches Jon’s static entries (e.g. `blind-date` row in upstream `index.html`).
 3. Update title, venue line, links, and description.
 
-## Add a publication
+## Refresh from upstream (optional)
 
-Duplicate a project `<tr>` under **Publications** (or use a dedicated academic project page later).
+```bash
+git clone --depth 1 https://github.com/jonbarron/jonbarron.github.io.git /tmp/jonbarron.github.io
+cp /tmp/jonbarron.github.io/stylesheet.css site/stylesheet.css
+```
+
+Do **not** replace your `index.html` wholesale—only pull CSS or copy individual `<tr>` blocks you need.
